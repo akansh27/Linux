@@ -1,5 +1,16 @@
 # Linux
+### Unix
+
+Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, developed starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.
+
+Unix was designed to be portable, multi-tasking and multi-user in a time-sharing configuration. Unix systems are characterized by various concepts: the use of plain text for storing data; a hierarchical file system; treating devices and certain types of inter-process communication (IPC) as files; and the use of a large number of software tools, small programs that can be strung together through a command-line interpreter using pipes, as opposed to using a single monolithic program that includes all of the same functionality. These concepts are collectively known as the "Unix philosophy". 
+
+Under Unix, the operating system consists of many utilities along with the master control program, the kernel. The kernel provides services to start and stop programs, handles the file system and other common "low-level" tasks that most programs share, and schedules access to avoid conflicts when programs try to access the same resource or device simultaneously. To mediate such access, the kernel has special rights, reflected in the division between user space and kernel space.
+
+Linux distributions, consisting of the Linux kernel and large collections of compatible software have become popular both with individual users and in business. Popular distributions include Red Hat Enterprise Linux, Fedora, SUSE Linux Enterprise, openSUSE, Debian GNU/Linux, Ubuntu, Linux Mint, Mandriva Linux, Slackware Linux, and Gentoo.
+
 ## Important Topics in Linux
+### * Linux Boot Process
 
 ### Linux Boot Process
 
@@ -14,7 +25,7 @@
 * Once the boot loader program is detected and loaded into the memory, BIOS gives the control to it.
 * So, in simple terms BIOS loads and executes the MBR boot loader.
 
-#### MBR
+#### 2. MBR
 
 * MBR stands for Master Boot Record.
 * It is located in the 1st sector of the bootable disk. Typically, /dev/hda, or /dev/sda
@@ -27,7 +38,7 @@
 * It contains information about GRUB (or LILO in old systems).
 * So, in simple terms MBR loads and executes the GRUB boot loader.
 
-#### GRUB
+#### 3.GRUB
 
 * GRUB stands for Grand Unified Bootloader.
 * If you have multiple kernel images installed on your system, you can choose which one to be executed.
@@ -48,14 +59,14 @@ title CentOS (2.6.32-696.el6.x86_64)
 * As you notice from the above info, it contains kernel and initrd image.
 * So, in simple terms GRUB just loads and executes Kernel and initrd images.
 
-#### Kernel
+#### 4. Kernel
 
 * Mounts the root file system as specified in the “root=” in grub.conf
 * Kernel executes the /sbin/init program
 * Since init was the 1st program to be executed by Linux Kernel, it has the process id (PID) of 1. You can check pid using ‘ps -ef | grep init’
 * Initrd (Initial RAM Disk) is used by kernel as temporary root file system until kernel is booted and the real root file system is mounted. It also contains necessary drivers compiled inside, which helps it to access the hard drive partitions, and other hardware.
 
-#### Init
+#### 5. Init
 * Looks at the /etc/inittab file to decide the Linux run level.
 * Following are the available run levels
 ```
@@ -72,7 +83,7 @@ title CentOS (2.6.32-696.el6.x86_64)
 * If you want to get into trouble, you can set the default run level to 0 or 6. Since you know what 0 and 6 means, probably you might not do that.
 * Typically, you would set the default run level to either 3 or 5.
 
-#### Runlevel programs
+#### 6. Runlevel programs
 * When the Linux system is booting up, you might see various services getting started. For example, it might say “starting postfix …. OK”. Those are the runlevel programs, executed from the run level directory as defined by your run level.
 * Depending on your default init level setting, the system will execute the programs from one of the following directories.
 ```
