@@ -25,6 +25,7 @@ All data in Unix is organized into files. All files are organized into directori
 
 ## Important Topics in Linux
 ### * Linux Boot Process
+### * File System Hierarchy
 
 ### Linux Boot Process
 
@@ -117,3 +118,16 @@ title CentOS (2.6.32-696.el6.x86_64)
 * Programs starts with K are used during shutdown. K for kill.
 * There are numbers right next to S and K in the program names. Those are the sequence number in which the programs should be started or killed.
 * For example, S12rsyslog is to start the syslog daemon, which has the sequence number of 12. S80postfix is to start the postfix daemon, which has the sequence number of 80. So, rsyslog program will be started before postfix.
+
+### File System Hierarchy
+
+![Alt text](https://github.com/farashahamad/Linux/blob/master/Linux-Filesystem-Hierarchy-Standard.png?raw=true "Optional Title")
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **`Simple`**
+
+
+![Alt text](https://github.com/farashahamad/Linux/blob/master/1EJLOqd.png?raw=true "Optional Title")
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **`Detailed`**
+
+![Alt text](https://github.com/farashahamad/Linux/blob/master/linux-filesystem.png?raw=true "Optional Title")
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **`More Detailed`**
+
