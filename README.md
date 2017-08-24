@@ -122,7 +122,9 @@ title CentOS (2.6.32-696.el6.x86_64)
 ### File System Hierarchy
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **`Simple`**
+
 ![Alt text](https://github.com/farashahamad/Linux/blob/master/Linux-Filesystem-Hierarchy-Standard.png?raw=true "Optional Title")
+
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **`Detailed`**
 ![Alt text](https://github.com/farashahamad/Linux/blob/master/linux-filesystem.png?raw=true "Optional Title")
