@@ -9,10 +9,26 @@ Under Unix, the operating system consists of many utilities along with the maste
 
 Linux distributions, consisting of the Linux kernel and large collections of compatible software have become popular both with individual users and in business. Popular distributions include Red Hat Enterprise Linux, Fedora, SUSE Linux Enterprise, openSUSE, Debian GNU/Linux, Ubuntu, Linux Mint, Mandriva Linux, Slackware Linux, and Gentoo.
 
+##### Kernel
+Kernel is the heart of the Os. It interacts with hardware and most of the tasks like memory management, task scheduling and file management.
+
+##### Shell
+Shell is a utility that processes the requests. It interprets the command you type and calls the program you want. The Shell uses syntax for all commands.
+
+##### Commands & Utilities
+These are various commands and utilities used in day today activities. There are 250+ standard commands.
+
+##### Files & Directories
+All data in Unix is organized into files. All files are organized into directories. These directories are organized into a tree like structure called file system.
+
+
+
 ## Important Topics in Linux
 ### * Linux Boot Process
 
 ### Linux Boot Process
+
+Sequence of booting a machine starts with Power-On Self Test (POST), before control passes to the sector zero of the hard disk.
 
 ![Alt text](https://github.com/farashahamad/Linux/blob/master/bootprocess.png?raw=true "Optional Title")
 
